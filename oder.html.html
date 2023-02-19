@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Place Your Order</title>
+</head>
+<body>
+  
+  <h1 class="h"> 
+    Order Here...!!!
+  </h1>
+  <form  action="" method="post" onsubmit=callvalue()>
+  <table>
+<tr>
+  <td>
+    <label  for="">Enter your name</label>
+  </td>
+  <td>
+    <input type="text" name="uname" id="uname" placeholder="Your Name"  pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$" required>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label for="">Enter your Email-ID</label>
+  </td>
+  <td>
+    <input type="email" name="mail" id="mail" placeholder="Your Email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" required>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label  for="">Contact Number</label>
+  </td>
+  <td>
+    <input type="tel" name="contact" id="contact" placeholder="Contact with country code" pattern="^([0|\+[0-9]{1,5})?([0-9]{10})$" required>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label for="">Number of Packages</label>
+  </td>
+  <td>
+    <input type="number" name="number" id="number" placeholder="Packages" required >
+  </td>
+</tr>
+<tr>
+<td>
+  <label for="location" style="padding-left: 20%;">Choose your location:</label>
+<select id="places" name="places" required>
+  <option value="Rishikesh" selected>Rishikesh</option>
+  <option value="Banglore">Banglore</option>
+  <option value="Kullumanali">Kullu-Manali</option>
+  <option value="Lonavala">Lonavala</option>
+  <option value="HimachalPradesh">Himachal Pradesh</option>
+  <option value="Goa">Goa</option>
+  <option value="Chattisgarh">Chattisgarh</option>
+  <option value="Pondicherry">Pondicherry</option>
+  <option value="MadhyaPradesh">Madhya Pradesh</option>
+  <option value="Hyderabad">Hyderabad</option>
+  <option value="Karnataka">Karnataka</option>
+  <option value="Kerala">Kerala</option>
+  <option value="Odisa">Odisa</option>
+  <option value="Mangalore">Manglore</option>
+  <option value="Andamanislands">Andaman Islands</option>
+  <option value="Ladakh">Ladakh</option>
+  
+</select>
+</td>
+</tr>
+
+
+  <td>
+    <label for="">
+      <input type="submit" name=""  value="Place Order" id="submit-btn">
+    </label>
+  </td>
+  <td>
+    <label for="">
+      <input type="reset" name="" value="Reset" id="reset-btn">
+    </label>
+  </td>
+</tr>
+<h1 style="color: rgb(236, 83, 83);"><b>Note: Our team will contact you for futher details about the trip(date,time,venue..etc), after you purchase your package.</b></h1>
+<tr>
+  <td>
+   <a href="./index.html"> Back to home page</a>
+  </td>
+</tr>
+  </table>
+</form>
+<script src="./order.js"></script>
+</body>
+</html>

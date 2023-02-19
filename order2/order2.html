@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Place Your Order</title>
+</head>
+<body>
+  
+  <h1 class="h"> 
+    Order Here...!!!
+  </h1>
+  <form  action="" method="post" onsubmit=callvalue()>
+  <table>
+<tr>
+  <td>
+    <label  for="">Enter your name</label>
+  </td>
+  <td>
+    <input type="text" name="username" id="username" placeholder="Full Name"   pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$" required>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label for="">Enter your Email-ID</label>
+  </td>
+  <td>
+    <input type="email" name="mail" id="mail" placeholder="Your email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" required>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label  for="">Contact Number</label>
+  </td>
+  <td>
+    <input type="tel" name="phn" id="phn" placeholder="Contact with country code" pattern="^([0|\+[0-9]{1,5})?([0-9]{10})$" required>
+  </td>
+</tr>
+
+
+<tr>
+  <td>
+    <label for="">Number of Items</label>
+  </td>
+  <td>
+    <input type="number" name="items" id="items" required>
+  </td>
+</tr>
+
+  <td>
+    <label for="">
+      <input type="submit" name=""   value="Place Order" id="submit-btn">
+    </label>
+  </td>
+  <td>
+    <label for="">
+      <input type="reset" name=""   value="Reset" id="reset-btn">
+    </label>
+  </td>
+</tr>
+<tr>
+  <td>
+   <a href="./index.html"> Back to home page</a>
+  </td>
+</tr>
+  </table>
+</form>
+<script src="./order2.js"></script>
+</body>
+</html>
